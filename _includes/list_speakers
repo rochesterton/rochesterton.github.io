@@ -1,5 +1,11 @@
 <p class="speakers">
 {% for speaker in include.speakers -%}
-  <span class="nowrap"><span class="name">{{speaker.name}}</span>, {{speaker.tagline}}</span>{% if forloop.last == false %} &bull;{% endif %}
+  {% if speaker.href %}<a href="{{speaker.href}}">{% endif %}
+  <span class="nowrap">
+  <span class="name">{{speaker.name}}</span>, {{speaker.tagline}}
+  </span>
+  {% if speaker.href %}</a>{% endif %}
+  {% if forloop.last == false %} &bull;{% endif %}
 {% endfor -%}
 </p>
+
