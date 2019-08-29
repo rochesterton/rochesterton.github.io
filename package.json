@@ -1,0 +1,26 @@
+{
+  "name": "rochesterton.github.io",
+  "version": "1.0.0",
+  "description": "Rochesterton",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rochesterton/rochesterton.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rochesterton/rochesterton.github.io/issues"
+  },
+  "homepage": "https://github.com/rochesterton/rochesterton.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
+  }
+}

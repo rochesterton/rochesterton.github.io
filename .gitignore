@@ -1,3 +1,5 @@
 _site
 _current_site
 
+_jekyll_site
+node_modules

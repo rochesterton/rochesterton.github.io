@@ -1,5 +1,5 @@
 <p class="speakers">
-{% for speaker in include.speakers -%}
+{% for speaker in speakers -%}
   {% if speaker.href %}<a href="{{speaker.href}}">{% endif %}
   <span class="nowrap">
   <span class="name">{{speaker.name}}</span>, {{speaker.tagline}}
