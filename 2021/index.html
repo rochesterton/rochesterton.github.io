@@ -4,32 +4,38 @@ speakers:
     tagline: Author
   - name: Dale Ahlquist
     tagline: Society of GK Chesterton
+  - name: Jonathan Thorndike
+    tagline: Belmont University
   - name: Ted Janiszewski
     tagline: St. Irenaeus Ministries
-poster_path: /2022/color2022letter-sized082522.pdf
-venue_map: https://www.google.com/maps/place/Basil+Hall/@43.1176988,-77.5130467,18z/data=!4m5!3m4!1s0x0:0xc25c40e993049d94!8m2!3d43.1177712!4d-77.5130226
+poster_path: /2021/color2021letter-sized090121.pdf
+venue_map: http://maps.apple.com/?daddr=St+John+the+Evangelist+Church,+Peace+of+Christ+Parish,+553+Humboldt+St,+Rochester,+NY+14610&dirflg=d&t=m
 layout: base
 css: |
   .header {
-    position: relative;
+    left: 0px;
+    color: #b88f2f;
   }
   #when {
     color: #b88f2f;
     margin-top: 1em;
   }
   .header img {
+    position: relative;
+    left: 0px;
     z-index: -1;
     max-width: 100%;
-    display: inline-block;
   }
   .header h1 {
     text-align: center;
-    width: 100%;
-    top: auto;
-    position: unset;
+    top: 50px;
+    right: 2em;
   }
   .header p {
     text-align: center;
+    position: absolute;
+    top: calc(50px + 3em);
+    right: 2em;
     font-size: 1.5em;
     font-weight: bold;
     font-style: italic;
@@ -42,49 +48,42 @@ css: |
   .bigger {
     font-weight: bold;
   }
-  .annual_conference {
-    text-transform: uppercase;
-  }
 ---
 
 <h3 class="annual_conference">
-  The Rochester NY Chesterton Society Presents
+  The Rochester NY Chesterton Society presents
   <br />
-  The 18th annual fr. leo hetzler conference
+  The Fr. Leo Hetzler Conference
 </h3>
 <!--If only relative positioning created scroll bars in IE6...-->
 <div class="header" >
-  <h1>
-    Faith of Our Fathers
-  </h1>
-  <img src="/2022/stained-glass-window.png"
+  <h1>Poetry</h1>
+  <p>
+    Fruit of Christian joy
+  </p>
+  <img src="/2021/GKC_reading_20210831_110124_000035_Web.png"
     id="pic"
-    alt="Stained glass window" 
+    alt="Placeholder" 
     style="left: 0px;"
     />
+</div>
+
+  {% include list_speakers speakers=speakers %}
+
+
+  <div id="where">
+    <h2>St. John the Evangelist Church</h2>
+    <a href="{{ venue_map }}">553 Humboldt St, Rochester, NY 14610</a>
+  </div>
+  <div id="when">
+    <h2>
+      Saturday, September 25<sup>th</sup>, 2021
+    </h2>
+    9 am &mdash; 3:30 pm
+  </div>
+
   <p>
-    England and the Church
-  </p>
-</div>
-
-{% include list_speakers speakers=speakers %}
-
-<div id="where">
-  <h2>
-    St. John Fisher College, Rochester NY Basil Hall
-  </h2>
-  <a href="{{ venue_map }}">553 Humboldt St, Rochester, NY 14610</a>
-</div>
-<div id="when">
-  <h2>
-    Saturday, November 12<sup>th</sup>, 2022
-  </h2>
-  9 am &mdash; 3:30 pm
-</div>
-
-<p>
-  <strong>Donation:</strong> $20.  <strong>Free to students.</strong>  Lunch available at nominal cost.
-</p>
+  <strong>Donation:</strong> $20.  <strong>Free to students.</strong>  Lunch available at nominal cost.</p>
 
 <div class="clear" />
 
@@ -92,6 +91,4 @@ css: |
   <span class="bigger">Funded by the Basilian Fathers of St. John Fisher College.</span>
   <br />
   With support from members of the Rochester NY Chesterton Society and from <a href="http://siministries.org" class="nowrap">St. Irenaeus Ministries</a>.
-  <br />
-  For questions, email rochesterton@hotmail.com
 </p>
