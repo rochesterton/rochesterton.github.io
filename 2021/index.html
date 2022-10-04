@@ -1,0 +1,94 @@
+---
+speakers:
+  - name: Joseph Pearce
+    tagline: Author
+  - name: Dale Ahlquist
+    tagline: Society of GK Chesterton
+  - name: Jonathan Thorndike
+    tagline: Belmont University
+  - name: Ted Janiszewski
+    tagline: St. Irenaeus Ministries
+poster_path: /2021/color2021letter-sized090121.pdf
+venue_map: http://maps.apple.com/?daddr=St+John+the+Evangelist+Church,+Peace+of+Christ+Parish,+553+Humboldt+St,+Rochester,+NY+14610&dirflg=d&t=m
+layout: base
+css: |
+  .header {
+    left: 0px;
+    color: #b88f2f;
+  }
+  #when {
+    color: #b88f2f;
+    margin-top: 1em;
+  }
+  .header img {
+    position: relative;
+    left: 0px;
+    z-index: -1;
+    max-width: 100%;
+  }
+  .header h1 {
+    text-align: center;
+    top: 50px;
+    right: 2em;
+  }
+  .header p {
+    text-align: center;
+    position: absolute;
+    top: calc(50px + 3em);
+    right: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .note {
+    border: 1px solid gray;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .bigger {
+    font-weight: bold;
+  }
+---
+
+<h3 class="annual_conference">
+  The Rochester NY Chesterton Society presents
+  <br />
+  The Fr. Leo Hetzler Conference
+</h3>
+<!--If only relative positioning created scroll bars in IE6...-->
+<div class="header" >
+  <h1>Poetry</h1>
+  <p>
+    Fruit of Christian joy
+  </p>
+  <img src="/2021/GKC_reading_20210831_110124_000035_Web.png"
+    id="pic"
+    alt="Placeholder" 
+    style="left: 0px;"
+    />
+</div>
+
+  {% include list_speakers speakers=speakers %}
+
+
+  <div id="where">
+    <h2>St. John the Evangelist Church</h2>
+    <a href="{{ venue_map }}">553 Humboldt St, Rochester, NY 14610</a>
+  </div>
+  <div id="when">
+    <h2>
+      Saturday, September 25<sup>th</sup>, 2021
+    </h2>
+    9 am &mdash; 3:30 pm
+  </div>
+
+  <p>
+  <strong>Donation:</strong> $20.  <strong>Free to students.</strong>  Lunch available at nominal cost.</p>
+
+<div class="clear" />
+
+<p class="thanks">
+  <span class="bigger">Funded by the Basilian Fathers of St. John Fisher College.</span>
+  <br />
+  With support from members of the Rochester NY Chesterton Society and from <a href="http://siministries.org" class="nowrap">St. Irenaeus Ministries</a>.
+</p>
